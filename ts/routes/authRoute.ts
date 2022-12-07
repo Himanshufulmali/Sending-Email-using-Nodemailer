@@ -10,11 +10,11 @@ import { findAllUsers } from "../controllers/authController";
 
 export default (app?:any) => {
 
-    app.post("/Chhayya/api/users/signup",{preHandler : signupValidation},signup);
+    app.post("/testing/api/users/signup",{preHandler : signupValidation},signup);
 
-    app.post("/Chhayya/api/users/signin",{preHandler : signinValidation},signin);
+    app.post("/testing/api/users/signin",{preHandler : signinValidation},signin);
 
-    app.put("/Chhayya/api/users", updatePass);
+    app.put("/testing/api/users", updatePass);
 
-    app.get("/Chhayya/api/users",findAllUsers); 
+    app.get("/tesing/api/users",findAllUsers); 
 }         

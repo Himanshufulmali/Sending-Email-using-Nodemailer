@@ -24,8 +24,10 @@ subject : "Signed in " ,
 //// just sending anything /////
 
  
-html : `you are signed in, please contact if it's not you` 
+html : `you are signed in, please contact if it's not you`
 } 
+
+
  transporters.sendMail(mail,(err:any,data:any) => {   
     if(err){  
    console.log(err);  
